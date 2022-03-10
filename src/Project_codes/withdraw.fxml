@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="594.0" prefWidth="797.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Project_codes.WithdrawController">
+   <children>
+      <Label alignment="CENTER" layoutY="-4.0" prefHeight="72.0" prefWidth="798.0" style="-fx-background-color: lightblue;" text="Withdraw Section" textFill="#151313">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutY="34.0" prefHeight="562.0" prefWidth="102.0" style="-fx-background-color: lightblue;" />
+      <TextField fx:id="wamount" layoutX="193.0" layoutY="156.0" prefHeight="64.0" prefWidth="517.0" />
+      <Label layoutX="193.0" layoutY="123.0" prefHeight="24.0" prefWidth="174.0" text="Withdraw Amount">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="193.0" layoutY="229.0" prefHeight="18.0" prefWidth="174.0" text="Password">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <Button fx:id="blackbutton" layoutX="353.0" layoutY="515.0" mnemonicParsing="false" onAction="#wtksubmit" prefHeight="54.0" prefWidth="156.0" style="-fx-background-color: darkgrey;" text="Submit" textFill="#131212">
+         <font>
+            <Font name="System Bold" size="28.0" />
+         </font>
+      </Button>
+      <Button layoutX="687.0" layoutY="68.0" mnemonicParsing="false" onAction="#tryhome" prefHeight="54.0" prefWidth="110.0" style="-fx-background-color: darkgrey;" text="Home" textFill="#0d0d0d">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Button>
+      <PasswordField fx:id="passwor" layoutX="193.0" layoutY="256.0" prefHeight="84.0" prefWidth="475.0" />
+      <Button fx:id="sent" layoutX="353.0" layoutY="348.0" mnemonicParsing="false" onAction="#sent" prefHeight="54.0" prefWidth="156.0" style="-fx-background-color: darkgrey;" text="SEND " textFill="#0b0b0b">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Button>
+      <TextField fx:id="code" layoutX="201.0" layoutY="427.0" prefHeight="64.0" prefWidth="517.0" />
+      <Label layoutX="201.0" layoutY="402.0" prefHeight="18.0" prefWidth="174.0" text="Code">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="100.0" fitWidth="102.0" layoutX="-11.0" layoutY="-4.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@logo-removebg-preview.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

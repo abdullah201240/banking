@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="641.0" prefWidth="840.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Project_codes.ProfileController">
+   <children>
+      <Label layoutX="-12.0" layoutY="2.0" prefHeight="642.0" prefWidth="850.0" style="-fx-background-color: lightblue;" />
+      <Label layoutX="73.0" layoutY="209.0" prefHeight="34.0" prefWidth="158.0" text="Name" textFill="#131212">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font></Label>
+      <Label layoutX="75.0" layoutY="262.0" prefHeight="34.0" prefWidth="139.0" text="Acc No" textFill="#302e2e">
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font></Label>
+      <Label layoutX="73.0" layoutY="304.0" prefHeight="34.0" prefWidth="131.0" text="Email" textFill="#333131">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font></Label>
+      <Label layoutX="75.0" layoutY="349.0" prefHeight="34.0" prefWidth="139.0" text="Phone Number" textFill="#0d0d0d">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font></Label>
+      <TextField fx:id="name" layoutX="226.0" layoutY="210.0" prefHeight="34.0" prefWidth="387.0" />
+      <TextField fx:id="acno" layoutX="226.0" layoutY="262.0" prefHeight="34.0" prefWidth="387.0" />
+      <TextField fx:id="email" layoutX="226.0" layoutY="306.0" prefHeight="34.0" prefWidth="387.0" />
+      <TextField fx:id="phone" layoutX="226.0" layoutY="349.0" prefHeight="34.0" prefWidth="387.0" />
+      <Button layoutX="663.0" layoutY="14.0" mnemonicParsing="false" onAction="#home" prefHeight="50.0" prefWidth="139.0" style="-fx-background-color: darkgray;" text=" Home">
+         <font>
+            <Font name="System Bold" size="23.0" />
+         </font></Button>
+      <Label layoutX="75.0" layoutY="402.0" prefHeight="34.0" prefWidth="139.0" text="Address" textFill="#262525">
+         <font>
+            <Font name="System Bold" size="22.0" />
+         </font></Label>
+      <TextField fx:id="address" layoutX="226.0" layoutY="402.0" prefHeight="34.0" prefWidth="387.0" />
+      <Label layoutX="75.0" layoutY="444.0" prefHeight="34.0" prefWidth="139.0" text="Dath of Birth" textFill="#2e2c2c">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font></Label>
+      <TextField fx:id="bdate" layoutX="226.0" layoutY="444.0" prefHeight="34.0" prefWidth="387.0" />
+      <Label layoutX="75.0" layoutY="489.0" prefHeight="34.0" prefWidth="139.0" text="Nationalist" textFill="#232323">
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font></Label>
+      <TextField fx:id="nnation" layoutX="226.0" layoutY="489.0" prefHeight="34.0" prefWidth="387.0" />
+      <Label layoutX="82.0" layoutY="531.0" prefHeight="34.0" prefWidth="139.0" text="Gender" textFill="#151515">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font></Label>
+      <TextField fx:id="gender" layoutX="226.0" layoutY="532.0" prefHeight="34.0" prefWidth="387.0" />
+      <Label layoutX="82.0" layoutY="582.0" prefHeight="34.0" prefWidth="139.0" text="Religion :" textFill="#202020">
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font></Label>
+      <TextField fx:id="regi" layoutX="226.0" layoutY="582.0" prefHeight="34.0" prefWidth="387.0" />
+      <Label layoutX="319.0" layoutY="14.0" prefHeight="50.0" prefWidth="223.0" text="Information">
+         <font>
+            <Font name="System Bold" size="33.0" />
+         </font>
+      </Label>
+      <Circle fx:id="ppset" fill="DODGERBLUE" layoutX="413.0" layoutY="110.0" radius="57.0" stroke="BLACK" strokeType="INSIDE" />
+      <Button layoutX="402.0" layoutY="174.0" mnemonicParsing="false" onAction="#set" style="-fx-background-color: white;" text="Set Prifile Picture" />
+      <Button fx:id="button12" layoutX="332.0" layoutY="174.0" mnemonicParsing="false" onAction="#save" style="-fx-background-color: white;" text="Save" />
+      <ImageView fitHeight="123.0" fitWidth="150.0" layoutY="3.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@logo.jpg" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

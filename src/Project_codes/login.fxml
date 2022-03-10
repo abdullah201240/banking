@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="414.0" prefWidth="726.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Project_codes.LoginController">
+   <children>
+      <ImageView fitHeight="430.0" fitWidth="740.0" layoutY="3.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@bg.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="281.0" layoutY="65.0" prefHeight="47.0" prefWidth="225.0" text="Welcome!" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="269.0" layoutY="118.0" prefHeight="18.0" prefWidth="237.0" text="     Login To Continue" />
+      <TextField fx:id="email" layoutX="197.0" layoutY="163.0" prefHeight="47.0" prefWidth="355.0" promptText="Enter email">
+         <font>
+            <Font name="System Italic" size="14.0" />
+         </font>
+      </TextField>
+      <Button layoutX="306.0" layoutY="274.0" mnemonicParsing="false" onAction="#switchToforgetpass" prefHeight="26.0" prefWidth="138.0" style="-fx-background-color: white;" text="Forgot Password?" />
+      <Button fx:id="button" layoutX="176.0" layoutY="311.0" mnemonicParsing="false" onAction="#switchtologin" prefHeight="38.0" prefWidth="388.0" style="-fx-background-color: RED;" text="LOGIN" textFill="#f7f2f2">
+         <font>
+            <Font name="Arial Bold" size="12.0" />
+         </font>
+      </Button>
+      <Button layoutX="176.0" layoutY="360.0" mnemonicParsing="false" onAction="#switchTosignup" prefHeight="38.0" prefWidth="388.0" style="-fx-background-color: BLACK;" text="SIGN UP" textFill="#f7f6f6">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <ImageView fitHeight="108.0" fitWidth="138.0" layoutX="588.0" layoutY="89.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@logo.jpg" />
+         </image>
+      </ImageView>
+      <PasswordField fx:id="pass" layoutX="195.0" layoutY="235.0" prefHeight="38.0" prefWidth="349.0" promptText="Enter Password" />
+   </children>
+</AnchorPane>

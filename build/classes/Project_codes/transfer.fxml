@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="543.0" prefWidth="773.0" style="-fx-background-color: lightblue;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Project_codes.FXMLController">
+   <children>
+      <Label layoutX="66.0" layoutY="82.0" prefHeight="450.0" prefWidth="642.0" style="-fx-background-color: black;" />
+      <Label alignment="CENTER" layoutY="-3.0" prefHeight="39.0" prefWidth="774.0" style="-fx-background-color: white;" text="Transfer Money" textFill="#1b1b1a">
+         <font>
+            <Font name="Arial Bold" size="21.0" />
+         </font>
+      </Label>
+      <Label layoutX="126.0" layoutY="131.0" prefHeight="32.0" prefWidth="314.0" text="Reciever Account" textFill="WHITE">
+         <font>
+            <Font name="Bell MT Bold" size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="accounts" layoutX="126.0" layoutY="163.0" prefHeight="39.0" prefWidth="464.0" />
+      <TextField fx:id="amount" layoutX="126.0" layoutY="229.0" prefHeight="39.0" prefWidth="464.0" />
+      <Label layoutX="126.0" layoutY="202.0" prefHeight="18.0" prefWidth="127.0" text="Amount" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Button fx:id="my" layoutX="272.0" layoutY="489.0" mnemonicParsing="false" onAction="#paynow" prefHeight="39.0" prefWidth="182.0" style="-fx-background-color: white;" text="PayNow">
+         <font>
+            <Font name="Bell MT" size="18.0" />
+         </font>
+      </Button>
+      <Button layoutX="585.0" layoutY="96.0" mnemonicParsing="false" onAction="#homesection" prefHeight="51.0" prefWidth="107.0" style="-fx-background-color: golden;" text="Home" textFill="#f7f7f7">
+         <font>
+            <Font name="System Bold Italic" size="25.0" />
+         </font>
+      </Button>
+      <Label layoutX="126.0" layoutY="404.0" prefHeight="18.0" prefWidth="146.0" text="One time Code" textFill="#f7f3f3">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <PasswordField fx:id="password" layoutX="126.0" layoutY="300.0" prefHeight="51.0" prefWidth="464.0" />
+      <Button fx:id="ons" layoutX="291.0" layoutY="359.0" mnemonicParsing="false" onAction="#sentcode" prefHeight="32.0" prefWidth="127.0" text="Sent Code">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Button>
+      <TextField fx:id="code" layoutX="131.0" layoutY="439.0" prefHeight="39.0" prefWidth="464.0" />
+      <Label layoutX="126.0" layoutY="272.0" prefHeight="18.0" prefWidth="146.0" text="Password" textFill="#f7f3f3">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="318.0" layoutY="42.0" prefHeight="39.0" prefWidth="158.0" text="LSA Bank" textFill="#a92727">
+         <font>
+            <Font name="Bell MT Bold" size="31.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.Reflection?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="434.0" prefWidth="650.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Project_codes.SignupController">
+   <children>
+      <ImageView fitHeight="400.0" fitWidth="600.0" layoutX="14.0" layoutY="37.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@bg.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="168.0" layoutY="14.0" prefHeight="28.0" prefWidth="313.0" text="Signup Information">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="name" layoutX="136.0" layoutY="50.0" prefHeight="36.0" prefWidth="327.0" promptText="Please enter name">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+         <effect>
+            <Reflection />
+         </effect>
+         <cursor>
+            <Cursor fx:constant="DEFAULT" />
+         </cursor>
+      </TextField>
+      <TextField fx:id="number" layoutX="136.0" layoutY="96.0" prefHeight="28.0" prefWidth="327.0" promptText="Phone Number">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="email" layoutX="136.0" layoutY="206.0" prefHeight="36.0" prefWidth="327.0" promptText="Email">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </TextField>
+      <Button fx:id="button" layoutX="222.0" layoutY="375.0" mnemonicParsing="false" onAction="#switchtologin" prefHeight="46.0" prefWidth="156.0" style="-fx-background-color: red;" text="Create Account" textFill="#f7f6f6">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+      <Button layoutX="487.0" layoutY="14.0" mnemonicParsing="false" onAction="#login" prefHeight="46.0" prefWidth="76.0" text="Home" textAlignment="CENTER">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Button>
+      <PasswordField fx:id="pass" layoutX="136.0" layoutY="169.0" prefHeight="36.0" prefWidth="327.0" promptText="Password">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </PasswordField>
+      <DatePicker fx:id="date" layoutX="136.0" layoutY="247.0" prefHeight="36.0" prefWidth="303.0" promptText="Date of Birth MM/Day/Year" />
+      <ComboBox fx:id="use" layoutX="136.0" layoutY="292.0" onAction="#gender" prefHeight="28.0" prefWidth="121.0" promptText="Gender" />
+      <ComboBox fx:id="use1" layoutX="300.0" layoutY="292.0" onAction="#Religion" prefHeight="28.0" prefWidth="121.0" promptText="Religion" />
+      <TextField fx:id="nationalist" layoutX="136.0" layoutY="331.0" prefHeight="36.0" prefWidth="327.0" promptText="Nationalist">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="Addresas" layoutX="136.0" layoutY="133.0" prefHeight="28.0" prefWidth="327.0" promptText="Address">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </TextField>
+   </children>
+</AnchorPane>
